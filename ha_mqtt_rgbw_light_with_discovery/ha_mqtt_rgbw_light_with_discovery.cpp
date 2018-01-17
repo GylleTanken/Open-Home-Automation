@@ -215,7 +215,7 @@ bool AIRGBWBulb::setColorTemperature(uint16_t p_colorTemperature) {
   }
 
   // computes blue
-  if (tmpKelvin <= 66) {
+  if (tmpKelvin >= 66) {
     m_color.blue = 255;
   } else {
     if (tmpKelvin <= 19) {
